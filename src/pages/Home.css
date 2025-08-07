@@ -1,0 +1,188 @@
+/*
+ * Hero
+ */
+.page-home .hero {
+  width: 100%;
+  height: 100vh;
+  min-height: 720px;
+  position: relative;
+  overflow: hidden;
+
+  @media (min-width: 1512px) {
+    min-height: 890px;
+  }
+}
+
+.page-home .hero .text-block {
+  position: relative;
+  z-index: 2;
+}
+
+.page-home .hero .logo-wrap {
+  padding: 40px 0 0;
+  z-index: 4;
+
+  @media (min-width: 1200px) {
+    padding: 4vw 0 0;
+  }
+}
+
+.page-home .hero .logo-kickstarter {
+  width: 100%;
+  height: 16px;
+
+  @media (min-width: 375px) {
+    height: 20px;
+  }
+
+  @media (min-width: 640px) {
+    height: 24px;
+  }
+
+  @media (min-width: 1200px) {
+    height: 32px;
+  }
+}
+
+.page-home .hero .logo {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+
+  @media (min-width: 640px) {
+    max-width: 640px;
+    margin: -16px auto 0;
+  }
+
+  @media (min-width: 960px) {
+    max-width: 800px;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 960px;
+    margin: -24px auto 0;
+  }
+
+  @media (min-width: 1512px) {
+    max-width: 1200px;
+  }
+}
+
+.page-home .hero .text-block h1 {
+  text-align: center;
+  max-width: 720px;
+  margin: 16px auto 0;
+  z-index: 5;
+
+  @media (min-width: 1200px) {
+    margin: 0 auto;
+  }
+}
+
+.page-home .hero .text-block h1 span {
+  display: inline-block;
+}
+    
+.page-home .hero .text-block h1 span:first-child {
+  margin-bottom: 1.5rem;
+}
+
+/* Hero Background */
+.page-home .hero-bg--wrap {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.page-home .hero-bg--char {
+  height: 100%;
+  position: relative;
+}
+
+.page-home .hero-char--max,
+.page-home .hero-char--midnight {
+  width: 50%;
+  height: 70vh;
+  margin-bottom: 32px;
+  bottom: 0;
+  position: absolute;
+  z-index: 3;
+}
+
+.page-home .hero-char--max {
+  left: 0;
+  background: url('../assets/max-buster.webp') 50% 100% / contain no-repeat;
+
+  @media (min-width: 960px) {
+    left: -140px;
+  }
+}
+
+.page-home .hero-char--midnight {
+  right: 0;
+  background: url('../assets/midnight-scratch.webp') 50% 100% / contain no-repeat;
+
+  @media (min-width: 960px) {
+    right: -112px;
+  }
+}
+
+.page-home .hero-bg {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: url('../assets/background.webp') 50% 50% / cover no-repeat;
+  z-index: 1;
+}
+
+/* Scroll down */
+.scroll-down {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+}
+
+.scroll-down span {
+  color: var(--color-white);
+  font-size: 0.875em;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/*
+ * Content
+ */
+.page-home .content {
+  padding: 40px 0;
+  background-color: var(--color-laser-line);
+}
+
+.page-home .content .text-block h2 {
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.page-home .content .text-block p {
+  max-width: 640px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.page-home .content .text-block h2,
+.page-home .content .text-block p {
+  text-align: center;
+}
+
+.page-home .content .text-block p,
+.page-home .content .text-block li {
+}

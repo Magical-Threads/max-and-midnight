@@ -1,0 +1,153 @@
+.page-kickstarter-vip h1,
+.page-kickstarter-vip h2,
+.page-kickstarter-vip h3,
+.page-kickstarter-vip p,
+.page-kickstarter-vip li {
+  color: var(--color-white);
+}
+
+.page-kickstarter-vip .hero .logo-wrap {
+  padding: 4vw 0 0;
+  z-index: 4;
+}
+
+.page-kickstarter-vip .hero .logo-kickstarter {
+  width: 100%;
+  height: 16px;
+
+  @media (min-width: 375px) {
+    height: 20px;
+  }
+
+  @media (min-width: 640px) {
+    height: 24px;
+  }
+
+  @media (min-width: 1200px) {
+    height: 32px;
+  }
+}
+
+.page-kickstarter-vip .hero .logo {
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+.page-kickstarter-vip .hero h1 {
+  color: var(--color-laser-line);
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.page-kickstarter-vip .hero h1,
+.page-kickstarter-vip .hero p {
+  text-align: center;
+}
+
+.screen-img {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+
+  @media (min-width: 1200px) {
+    gap: 1rem;
+  }
+}
+
+.screen-img .shape-trapezoid {
+  width: calc(100% / 2);
+  height: 260px;
+
+  @media (min-width: 768px) {
+    width: calc(100% / 3);
+  }
+
+  @media (min-width: 1200px) {
+    height: 320px;
+  }
+}
+
+.screen-img .shape-trapezoid:first-child {
+  clip-path: polygon(0% 0%, 100% 5%, 100% 95%, 0% 100%);
+}
+
+.screen-img .shape-trapezoid:nth-child(2) {
+  height: 234px;
+  display:none;
+
+  @media (min-width: 768px) {
+    display: inline-block;
+  }
+
+  @media (min-width: 1200px) {
+    height: 288px;
+  }
+}
+
+.screen-img .shape-trapezoid:last-child {
+  clip-path: polygon(0% 5%, 100% 0%, 100% 100%, 0% 95%);
+}
+
+.screen-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* border: 0.5rem solid var(--color-midnight-purple); */
+}
+
+/*
+ * Content
+ */
+.content {
+  padding: 2.5rem 0 2.5rem;
+
+  @media (min-width: 768px) {
+    padding: 5rem 0 2.5rem;
+  }
+}
+
+.content h2 {
+  text-wrap: balance;
+}
+
+
+/*
+ * Faqs
+ */
+.faqs {
+  padding: 2.5rem 0 8rem;
+
+  @media (min-width: 768px) {
+    padding: 2.5rem 0 16rem;
+  }
+}
+
+/*
+ * Background fixed elements
+ */
+.mission-control {
+  bottom: 0;
+  width: 100%;
+  height: 228px;
+  position: fixed;
+  background: url('../assets/moonlaser.webp') 50% 100% / contain no-repeat;
+  z-index: 0;
+}
+
+.bg-galaxy {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: url('../assets/bg-galaxy.webp') 50% 50% / cover no-repeat;
+  z-index: -1;
+}
