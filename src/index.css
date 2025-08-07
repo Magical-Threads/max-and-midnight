@@ -64,6 +64,29 @@ body {
   }
 }
 
+nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  top: 0;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+nav a {
+  color: var(--color-white);
+  font-size: 0.75em;
+  line-height: 1;
+  font-weight: 600;
+  text-decoration: none;
+  vertical-align: bottom;
+}
+
 /*
  * Typography
  */
@@ -88,10 +111,14 @@ h6,
 
 h1,
 .fs-h1 {
-  font-size: 2em;
+  font-size: 1.75em;
   line-height: 1.2;
 
   @media (min-width: 640px) {
+    font-size: 2em;
+  }
+
+  @media (min-width: 768px) {
     font-size: 2.5em;
   }
 

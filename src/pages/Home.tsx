@@ -27,8 +27,7 @@ const Home: React.FC = () => {
             
               <h1>
                 <span>Secret Agent Adventure</span>
-                <span>Get Early Access to</span>
-                <span>Max & Midnight</span>
+                <span>Get Early Access to Max & Midnight</span>
               </h1>
             </div>
           </div>
