@@ -33,7 +33,7 @@ const Home: React.FC = () => {
           </div>
 
           <div className="hero-bg--wrap">
-            <div className="hero-bg--char container">
+            <div className="hero-bg--char">
               <div className="hero-char--max"></div>
               <div className="hero-char--midnight"></div>
             </div>

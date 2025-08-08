@@ -6,44 +6,19 @@
   color: var(--color-white);
 }
 
-.page-kickstarter-vip .hero .logo-wrap {
-  padding: 4vw 0 0;
-  z-index: 4;
-}
-
-.page-kickstarter-vip .hero .logo-kickstarter {
-  width: 100%;
-  height: 16px;
-
-  @media (min-width: 375px) {
-    height: 20px;
-  }
-
-  @media (min-width: 640px) {
-    height: 24px;
-  }
-
-  @media (min-width: 1200px) {
-    height: 32px;
-  }
-}
-
-.page-kickstarter-vip .hero .logo {
-  width: 100%;
-  max-width: 640px;
-  height: auto;
-  margin: 0 auto;
-  display: block;
-}
-
 .page-kickstarter-vip .hero h1 {
   color: var(--color-laser-line);
-  font-size: 1.5em;
+  font-size: 1em;
   text-transform: uppercase;
+
+  @media (min-width: 640px) {
+    font-size: 1.5em;
+  }
 }
 
 .page-kickstarter-vip .hero h1,
 .page-kickstarter-vip .hero p {
+  margin-bottom: 1rem;
   text-align: center;
 }
 
@@ -54,8 +29,12 @@
   align-items: center;
   gap: 0.75rem;
   max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 1.5rem;
+  margin: 1rem auto 0;
+  padding: 0 1rem;
+
+  @media (min-width: 640px) {
+    padding: 0 1.5rem;
+  }
 
   @media (min-width: 1200px) {
     gap: 1rem;
@@ -64,10 +43,23 @@
 
 .screen-img .shape-trapezoid {
   width: calc(100% / 2);
-  height: 260px;
+  height: 120px;
+
+  @media (min-width: 500px) {
+    height: 180px;
+  }
+  
+  @media (min-width: 640px) {
+    height: 220px;
+  }
 
   @media (min-width: 768px) {
     width: calc(100% / 3);
+    height: 220px;
+  }
+
+  @media (min-width: 960px) {
+    height: 240px;
   }
 
   @media (min-width: 1200px) {
@@ -80,11 +72,15 @@
 }
 
 .screen-img .shape-trapezoid:nth-child(2) {
-  height: 234px;
   display:none;
 
   @media (min-width: 768px) {
+    height: 194px;
     display: inline-block;
+  }
+
+  @media (min-width: 960px) {
+    height: 212px;
   }
 
   @media (min-width: 1200px) {
@@ -136,10 +132,34 @@
 .mission-control {
   bottom: 0;
   width: 100%;
-  height: 228px;
+  height: 120px;
   position: fixed;
-  background: url('../assets/moonlaser.webp') 50% 100% / contain no-repeat;
+  background: url('../assets/moonlaser.webp') 50% 0% / cover no-repeat;
   z-index: 0;
+
+  @media (min-width: 500px) {
+    height: 140px;
+  }
+
+  @media (min-width: 960px) {
+    height: 180px;
+  }
+
+  @media (min-width: 1200px) {
+    height: 200px;
+  }
+
+  @media (min-width: 1512px) {
+    height: 240px;
+  }
+
+  @media (min-width: 1920px) {
+    height: 320px;
+  }
+
+  @media (min-width: 2560px) {
+    height: 380px;
+  }
 }
 
 .bg-galaxy {

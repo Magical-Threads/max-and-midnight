@@ -76,6 +76,8 @@ nav {
   background-color: rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   z-index: 10;
+
+  display: none;
 }
 
 nav a {
@@ -111,7 +113,7 @@ h6,
 
 h1,
 .fs-h1 {
-  font-size: 1.75em;
+  font-size: 1.5em;
   line-height: 1.2;
 
   @media (min-width: 640px) {
@@ -127,7 +129,7 @@ h1,
   }
 
   @media (min-width: 1200px) {
-    font-size: 3.5em;
+    font-size: 3.25em;
   }
 }
 
