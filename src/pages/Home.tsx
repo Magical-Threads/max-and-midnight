@@ -1,3 +1,6 @@
+import MetaTags from '../components/MetaTags';
+import ogImage from '../assets/max-and-midnight-kickstarter-facebook.jpg';
+import twitterImage from '../assets/max-and-midnight-kickstarter-twitter.jpg';
 import kickstarterLogo from '../assets/logo-kickstarter.svg';
 import maxMidnightLogo from '../assets/logo-max-and-midnight.webp';
 import './Home.css';
@@ -5,6 +8,14 @@ import './Home.css';
 const Home: React.FC = () => {
   return (
     <>
+      <MetaTags
+        title="Max & Midnight | Kickstarter - Secret Agent Adventure"
+        description="Get early access to Max & Midnight’s secret agent adventure! Unlock exclusive Kickstarter deals, behind-the-scenes updates, and limited-time fan discounts."
+        url="https://maxandmidnight.com"
+        ogImage={ogImage}
+        twitterImage={twitterImage}
+      />
+
       <main className="page-home">
         <div className="hero">
           <div className="container">
@@ -42,6 +53,12 @@ const Home: React.FC = () => {
 
           <div className="scroll-down">
             <span>Scroll</span>
+            
+             <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M30 10.6833L27.65 8.33331L20 15.9666L12.35 8.33331L10 10.6833L20 20.6833L30 10.6833Z" fill="white"/>
+                <path d="M30 21.6667L27.65 19.3167L20 26.95L12.35 19.3167L10 21.6667L20 31.6667L30 21.6667Z" fill="white"/>
+            </svg>
+
           </div>
         </div>
 
