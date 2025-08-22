@@ -1,12 +1,15 @@
 .page-kickstarter-vip h1,
+.page-thank-you h1,
 .page-kickstarter-vip h2,
 .page-kickstarter-vip h3,
 .page-kickstarter-vip p,
+.page-thank-you p,
 .page-kickstarter-vip li {
   color: var(--color-white);
 }
 
-.page-kickstarter-vip .hero .logo {
+.page-kickstarter-vip .hero .logo,
+.page-thank-you .hero .logo {
   width: 100%;
   max-width: 480px;
   height: auto;
@@ -44,7 +47,8 @@
   }
 }
 
-.page-kickstarter-vip .hero h1 {
+.page-kickstarter-vip .hero h1,
+.page-thank-you .hero h1 {
   color: var(--color-laser-line);
   font-size: 1em;
   text-transform: uppercase;
@@ -56,12 +60,10 @@
 }
 
 .page-kickstarter-vip .hero h1,
-.page-kickstarter-vip .hero p {
+.page-thank-you .hero h1,
+.page-kickstarter-vip .hero p,
+.page-thank-you .hero p {
   text-align: center;
-}
-
-.page-kickstarter-vip .hero p {
-
 }
 
 .screen-img {
@@ -138,7 +140,6 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* border: 0.5rem solid var(--color-midnight-purple); */
 }
 
 /*
@@ -155,6 +156,13 @@
 
 .content h2 {
   text-wrap: balance;
+}
+
+.page-thank-you .content {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: initial;
 }
 
 .rocket-chase {
